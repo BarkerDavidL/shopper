@@ -1,0 +1,51 @@
+evaluate_mg_task:
+  description: >
+    Conduct a thorough evaluation about 1972 MG Midget {topic} (the product).
+    List the criteria you can use to evaluate the product.
+    Provide a list of pros and cons for this product.
+  expected_output: >
+    A list of criteria used to evaluate a product, a list of pros and cons about
+    a product, and a concise summary of the quality of the product.
+  agent: evaluator
+
+evaluate_tr_task:
+  description: >
+    Conduct a thorough evaluation about 1973 Triumph TR6 {topic} (the product).
+    List the criteria you can use to evaluate the product.
+    Provide a list of pros and cons for this product.
+  expected_output: >
+    A list of criteria used to evaluate a product, a list of pros and cons about
+    a product, and a concise summary of the quality of the product.
+  agent: evaluator
+
+evaluate_fiat_task:
+  description: >
+    Conduct a thorough evaluation about 1970 Fiat 124 Sport Spider {topic} (the product).
+    List the criteria you can use to evaluate the product.
+    Provide a list of pros and cons for this product.
+  expected_output: >
+    A list of criteria used to evaluate a product, a list of pros and cons about
+    a product, and a concise summary of the quality of the product.
+  agent: evaluator
+
+evaluate_datsun_task:
+  description: >
+    Conduct a thorough evaluation about 1970 Datsun 240Z {topic} (the product).
+    List the criteria you can use to evaluate the product.
+    Provide a list of pros and cons for this product.
+  expected_output: >
+    A list of criteria used to evaluate a product, a list of pros and cons about
+    a product, and a concise summary of the quality of the product.
+  agent: evaluator
+
+selector_task:
+  description: >
+    Review a list of different product reports for {topic} products.
+    Use the criteria, pros and cons listed in the product reports to determine how
+    the product quality in a report compares to the product quality in other reports.
+    Create a product ranking report that includes a list of the product reports from best to worst.
+    Preceed each report with the numerical ranking starting at 1.
+  expected_output: >
+    A list of products from 1 to n where n=the number of products. For each list item,
+    include the product name and a summary describing the qualities of the product.
+  agent: selector

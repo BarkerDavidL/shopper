@@ -12,6 +12,15 @@ First, if you haven't already, install uv:
 pip install uv
 ```
 
+Then you will need to install crewai
+
+```bash
+uv tool install crewai
+```
+
+You will need to make sure that $USERHOME\\.local\bin is in your path
+For example, export PATH=$PATH:/C/Users/username/.local/bin
+
 Next, navigate to your project directory and install the dependencies:
 
 (Optional) Lock the dependencies and install them by using the CLI command:

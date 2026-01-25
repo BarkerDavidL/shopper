@@ -11,6 +11,9 @@ First, if you haven't already, install uv:
 ```bash
 pip install uv
 ```
+At this point, I start cursor and open my project folder that I cloned from github. When starting cursor for the first time, I had no virtual environments.
+I didn't know how to select a kernel for regular python files, so I created a test.ipynb. I opened that file and I get a 'select kernel' in the upper right.
+The first time I need to create a new kernal. I choose to use python 3.12.6 and let it install. Once it was installed, I could continue.
 
 Then you will need to install crewai
 

@@ -42,7 +42,6 @@ crewai install
 ## Running the Project
 
 To kickstart your crew of AI agents and begin task execution, run this from the root folder of your project:
-
 ```bash
 $ crewai run
 ```
@@ -54,6 +53,15 @@ This example, unmodified, will run the create a `report.md` file with the output
 ## Understanding Your Crew
 
 The shopper Crew is composed of multiple AI agents, each with unique roles, goals, and tools. These agents collaborate on a series of tasks, defined in `config/tasks.yaml`, leveraging their collective skills to achieve complex objectives. The `config/agents.yaml` file outlines the capabilities and configurations of each agent in your crew.
+
+## Crewai Tracing
+
+To get tracing in Crewai, follow these steps the CrewAI Docs: (https://docs.crewai.com/en/observability/tracing)
+
+There are many options to set tracing, but I prefer setting a variable in .env:
+```bash
+CREWAI_TRACING_ENABLED=True
+```
 
 ## Support
 
